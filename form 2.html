@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+    <table align=center bgcolor=skyblue bordercolor=red cellspacing=5px cellpadding=10px>
+	       <tr>
+		       <td><label for=fname>FirstName</label></td>
+			   <td><input type=text name="fname" placeholder="kiran" size=5></td><!--If we use "size" the box will become small,but we can input any thing-->
+		   </tr>
+		   <tr>
+		       <td><label for=sname>My Last Name</label></td>
+			   <td><input type=text name=sname required ></td>
+		   </tr>
+		   <tr>
+		        <td>choose gender</td>
+				<td><input type=radio name=gender><label for=gender>male</label></td>
+		   </tr>
+		   <tr>
+		        <td></td>
+				<td><input type=radio name=gender><label for=gender>female</label></td>
+		   </tr>
+		   <tr>
+		        <td>choose skills</td>
+				<td><input type=checkbox name="skills">
+				    <label for="skills">core java</label></td>	
+		   </tr>
+		   <tr>
+		        <td></td>
+				<td><input type=checkbox name="skills">
+				    <label for="skills">Adj java</label></td>	
+		   </tr>
+		   <tr>
+		        <td></td>
+				<td><input type=checkbox name="skills">
+				    <label for="skills">Spring boots</label></td>	
+		   </tr>
+		   <tr>
+		        <td></td>
+				<td><input type=checkbox name="skills">
+				    <label for="skills">Java Script</label></td>	
+		   </tr>
+		   <tr>
+		        <td></td>
+				<td><input type=checkbox name="skills">
+				    <label for="skills">Hybernates</label></td>	
+		   </tr>
+		   <tr>
+		        <td><label for=email>Email</label></td>
+				<td><input type=Email name=email></td>  <!-- when we specify with"email" it can ask "@" for valid adress,,,"text" can accept everything-->
+		   </tr>
+		   <tr>
+		        <td><label for=password>password</label></td>
+				<td><input type="password" name=password></td><!--Here "password value" used for hide the text of which given password-->
+		   </tr>
+		   <tr>
+		        <td><label for=contact>phone number</label></td>
+				<td><input type="text" name="ccode" placeholder="+91" size=2>
+				<input type="number" pattern=[0-9] {10} name=contact></td>
+		   </tr>
+		   <tr>
+		        <td><label for=pin>pincode</label></td>
+				<td><input type="tel" pattern=[0-9] {6} name="pin"></td> <!--when we use "number value" we cannot use the text & other,,
+				               tel==>tel is along text,, we can input only number.we cannot use the text & other-->
+		   
+		   </tr>
+		   <tr>
+		        <td><label for=qty>quantity</label></td>
+				<td><input type="number" name=qty max=5 min=1></td>
+		   </tr>
+		   <tr>
+		        <td><label for=date>Date Of Birth</label></td>
+				<td><input type="date" name=date></td>
+		   </tr>
+		   <tr>
+		      <td><label for=file> upload your resume</label></td>
+			  <td><input type="file" name=file></td>
+		   </tr>
+		   <tr>
+		       <td><label for="reset"></label></td>
+               <td><input type="reset" name=reset></td>			   			   
+		   </tr>
+		   <tr>
+		       <td><label for="hidden"></label></td>
+               <td><input type="hidden" id=custid name=custid value="454"></td>			   			   
+		   </tr>
+		   <tr>
+		   <th><input type=button value="click here" onclick="confirm('empty page')"></th><!--Here "button value" is for normal clickable button
+		             "onclick attribute"with"alert value" are give pop in alert value it give "OK",,,If we give"confirm value" it gives "ok"&"cancel"-->
+					 <!--NOTE:IT IS A CSSPART-->
+		   <th colspan=2><input type=submit></th> <!--here "colspan attribute" for the which we move submit button to center for the form.which depend on the columns to giv esubmit in center-->
+		   </tr>
+	   </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+    <form action="https://www.flipkart.com/"> 
+	   
+	    <label for=fname>FirstName:</label>
+	    <input type=text name=fname placeholder=jagan required><br><br> <!--placeholder is used to identyfy default name,,,required is used for important must to fill the form-->
+		
+		<label for=jname>Lastname:</label>
+		<input type=text name=jname value="maddela"><br><br>
+		
+		<p>choose your gender</p>
+		
+		<input type=radio name="gender">  <!--radio for choose option, in radio select only one option not multple.CHECKBOX can select multiple options-->
+		<label for="gender">male</label><br>
+		
+		<input type=radio name="gender">  <!--if we remove "name= gender" we can select multiple option,we dont acces radio type option-->
+		<label for="gender">female</label><br><br>
+		
+		<p>choose your skills</p>
+		<input type=checkbox name="skills">		<!-- CHECKBOX is to select multiple option-->
+		<label for="skills">core java</label><br>
+		<input type=checkbox name="skills">
+		<label for="skills">java script</label><br>
+		<input type=checkbox name="skills">
+		<label for="skills">spring boots></label><br>
+		<input type=checkbox name="skills">
+		<label for="skills">adv java</label><br>
+		<input type=submit value=register> <!--submit button-->
+	</form>
+</body>
+</html>
+<html>
